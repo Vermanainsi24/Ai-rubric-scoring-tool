@@ -5,7 +5,9 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import language_tool_python
 
 sentiment_analyzer = SentimentIntensityAnalyzer()
-grammar_tool = language_tool_python.LanguageTool('en-US')
+
+grammar_tool = language_tool_python.LanguageToolPublicAPI('en-US')
+
 
 RUBRIC_IMAGE_PATH="/mnt/data/8f022ef2-4456-4b09-a530-565c68df177d.png"
 
