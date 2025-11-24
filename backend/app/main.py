@@ -109,7 +109,8 @@ import os
 import logging
 
 # Local scoring function (imported from scoring.py in same folder)
-from scoring import score_transcript
+from .scoring import score_transcript
+
 
 # Lazy import for whisper is still fine, we import at module-level to load once
 import whisper
